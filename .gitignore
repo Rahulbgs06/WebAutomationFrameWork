@@ -6,6 +6,9 @@ target/
 *.jar
 *.war
 *.ear
+test-output/
+*.log
+
 
 # ---------------------------
 # IDE files
