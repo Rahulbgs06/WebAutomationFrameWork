@@ -1,0 +1,56 @@
+# ---------------------------
+# Maven / Java
+# ---------------------------
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# ---------------------------
+# IDE files
+# ---------------------------
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.metadata/
+*.log
+bin/
+*.tmp
+*.bak
+*.swp
+*~.nib
+*.sublime-project
+*.sublime-workspace
+
+# IntelliJ
+out/
+*.ipr
+*.iws
+*.iml
+.idea/
+
+# ---------------------------
+# OS files
+# ---------------------------
+.DS_Store
+Thumbs.db
+*.swp
+
+# ---------------------------
+# TestNG / Selenium
+# ---------------------------
+reports/
+screenshots/
+*.html
+
+# ---------------------------
+# Excel / Test Data
+# ---------------------------
+*.xlsx
+*.xls
+
