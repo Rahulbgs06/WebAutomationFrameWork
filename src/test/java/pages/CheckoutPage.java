@@ -41,7 +41,7 @@ public class CheckoutPage {
 	}
 
 	public void enterCheckoutInfo(String firstName, String lastName, String postalCode) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(05));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOf(firstNameField));
 		wait.until(ExpectedConditions.elementToBeClickable(firstNameField));
 
@@ -62,7 +62,7 @@ public class CheckoutPage {
 	}
 
 	public void finishCheckout() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(05));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOf(finishBtn));
 		System.out.println("Finishing checkout...");
 		finishBtn.click();
@@ -78,7 +78,7 @@ public class CheckoutPage {
 
 	public boolean isOrderCompleted() {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(8));
 			wait.until(ExpectedConditions.visibilityOf(orderConfirmation));
 			System.out.println("Order completed! Message: " + orderConfirmation.getText());
 			return true;
