@@ -40,7 +40,7 @@ public class LoginPage {
 		passwordField.sendKeys(pass);
 		loginButton.click();
 	}
-
+	// verify the login
 	public boolean isDashboardVisible() {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6)); // increased wait
