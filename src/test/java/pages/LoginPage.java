@@ -43,7 +43,7 @@ public class LoginPage {
 
 	public boolean isDashboardVisible() {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // increased wait
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(07)); // increased wait
 			wait.until(ExpectedConditions.visibilityOf(menuButton));
 			return menuButton.isDisplayed();
 		} catch (Exception e) {
