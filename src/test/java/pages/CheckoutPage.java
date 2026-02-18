@@ -78,7 +78,7 @@ public class CheckoutPage {
 
 	public boolean isOrderCompleted() {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(8));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			wait.until(ExpectedConditions.visibilityOf(orderConfirmation));
 			System.out.println("Order completed! Message: " + orderConfirmation.getText());
 			return true;

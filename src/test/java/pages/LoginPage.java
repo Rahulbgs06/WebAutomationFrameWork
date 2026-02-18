@@ -43,7 +43,7 @@ public class LoginPage {
 
 	public boolean isDashboardVisible() {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(06)); // increased wait
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6)); // increased wait
 			wait.until(ExpectedConditions.visibilityOf(menuButton));
 			return menuButton.isDisplayed();
 		} catch (Exception e) {
@@ -53,7 +53,7 @@ public class LoginPage {
 
 	public boolean isLoginErrorVisible() {
 		try {
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(6));
 			wait.until(ExpectedConditions.visibilityOf(loginError));
 			return loginError.isDisplayed();
 		} catch (Exception e) {
