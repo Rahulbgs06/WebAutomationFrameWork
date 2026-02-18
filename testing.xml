@@ -1,0 +1,7 @@
+<suite name="endtoEndSuite">
+  <test name="endtoEnd">
+    <classes>
+      <class name="tests.LoginTest"/>
+    </classes>
+  </test>
+</suite>
